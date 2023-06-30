@@ -11,7 +11,7 @@
     background-color: #A4907C;
     color: aliceblue;
     width: 100%;
-    height: 140px;
+    height: 100px;
 }
 .icon {
     display: flex;
@@ -45,6 +45,42 @@ display: flex;
     font-size: 30px;
     margin-left: 24px;
 }
+
+.hero{
+    height: 300px;
+}
 /* Aca empieza a estilar IGNACIO */
+
+.artistas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section1{
+    height: 500px;
+    padding-top:150px; ;
+}
+
+.section1 h1{
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline #bb7433;
+}
+
+.section1 img{
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 100px black;
+    position: relative;
+}
+
+.section1 img:hover{
+    transform: scale(1.4);
+    margin: 0px 50px;
+    transition: 0.9s;
+}
+
+
 
 /* Aca empieza a estilar LUCA */
