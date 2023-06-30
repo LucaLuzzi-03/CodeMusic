@@ -10,28 +10,33 @@ html {
 
 /* Aca empieza a estilar JADE */
 .main {
-    display: flex;
-    justify-content: space-between;
     top: 0;
     background-color: #A4907C;
     color: aliceblue;
-    width: 100%;
+    width: 100vw;
     height: 95px;
     padding-bottom: 5px;
 }
 .icon {
     display: flex;
-    align-items: center;
-    right: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 .icon p {
     font-size: 30px;
     font-family: 'Ysabeau SC', sans-serif;
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 25px;
+    margin-left: 12px;
 }
 .icon img {
     margin-top: 22px;
+}
+.icon i {
+    margin-top: 34px;
+    font-size: 35px;
+    margin-right: 10px;
 }
 
 .contacts {
@@ -59,29 +64,29 @@ display: flex;
 }
 .hero{
     height: 700px;
-    width: auto;
+    width: 100vw;
     background-image: url(Images/Crane\ Wives\ -\ Folk.jpg);
-    background-position: left 28%;
+    background-size: cover;
 }
 .hero h2 {
     font-weight: 500;
-    font-size: 80px;
-    font-family: 'Roboto Slab', serif;
-    color:#0d4069 ;
-    position: relative;
-    top: 28%;
-    left: 10%;
-    width: fit-content;
-    height: fit-content;
-}
+     font-size: 55px;
+     font-family: 'Roboto Slab', serif;
+     color: #0d4069;
+     position: relative;
+     top: 21%;
+     left: 5%;
+     width: fit-content;
+     height: fit-content;
+    }
 .hero p {
     font-weight: 400;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Roboto Slab', serif;
-    color: #071064 ;
+    color: #071064;
     position: relative;
-    top: 27%;
-    left: 19%;
+    top: 18%;
+    left: 25%;
     width: fit-content;
     height: fit-content;
 
