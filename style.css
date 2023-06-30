@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     top: 0;
-    width: 100%;
     background-color: #A4907C;
     color: aliceblue;
     width: 100%;
@@ -61,6 +60,7 @@ display: flex;
 }
 .hero{
     height: 700px;
+    width: auto;
     background-image: url(Images/Crane\ Wives\ -\ Folk.jpg);
     background-position: left 28%;
 }
@@ -72,6 +72,8 @@ display: flex;
     position: relative;
     top: 28%;
     left: 10%;
+    width: fit-content;
+    height: fit-content;
 }
 .hero p {
     font-weight: 400;
@@ -81,6 +83,8 @@ display: flex;
     position: relative;
     top: 27%;
     left: 19%;
+    width: fit-content;
+    height: fit-content;
 
 }
 /* Aca empieza a estilar IGNACIO */
