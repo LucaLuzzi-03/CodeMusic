@@ -5,7 +5,46 @@
 }
 
 /* Aca empieza a estilar JADE */
+.main {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A4907C;
+    color: aliceblue;
+    width: 100%;
+    height: 140px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    right: 0%;
+}
+.icon p {
+    font-size: 30px;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 600;
+}
 
+
+form {
+    display: flex;
+}
+
+.contacts {
+display: flex;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.contacts p {
+    margin: 50px;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.contacts i {
+    font-size: 30px;
+    margin-left: 24px;
+}
 /* Aca empieza a estilar IGNACIO */
 
 /* Aca empieza a estilar LUCA */
