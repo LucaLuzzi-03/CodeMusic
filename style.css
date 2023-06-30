@@ -33,12 +33,66 @@ html {
 .icon img {
     margin-top: 22px;
 }
-.icon i {
+/* .icon i {
     margin-top: 34px;
     font-size: 35px;
     margin-right: 10px;
+} */
+.hamburger-menu, .sidebar {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+   --bar-width: 35px ;
+   --bar-height: 8px;
+   --hamburger-gap: 5px;
+   --foreground: #333;
+   --background: white;
+   --animation-timing: 200ms 
+
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    left: 85%;
+    top: 4.5%;
+    z-index: 2;
+    cursor: pointer;
+}
+.hamburger-menu::before,
+.hamburger-menu input, 
+.hamburger-menu::after {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 99px;
+    
+}
+.hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+.sidebar {
+   transition: translate var(--animation-timing);
+   translate: 100%;
+   margin-top: 24%;
+   margin-right: 0%;
+   background-color:#51351c ;
+   border-radius: 2%;
+   padding: 10% 10% 25% 10%;
 }
 
+.hamburger-menu:has(input:checked) + .sidebar {
+    translate: 0;
+
+}
 .contacts {
 display: flex;
     align-items: center;
@@ -73,7 +127,7 @@ display: flex;
      font-size: 55px;
      font-family: 'Roboto Slab', serif;
      color: #0d4069;
-     position: relative;
+     position: absolute;
      top: 21%;
      left: 5%;
      width: fit-content;
