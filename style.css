@@ -114,6 +114,13 @@ gap: 20px;
     margin-left: 15px;
     
 }
+.sidenav div a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.sidebar div a:hover {
+    color: #bb7433;
+}
 .hamburger-menu:has(input:checked) + .sidebar {
     translate: 0;
 
