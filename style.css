@@ -87,15 +87,33 @@ nav{
 .sidebar {
 transition: translate var(--animation-timing);
     translate: 100%;
+    z-index: 2;
     position: relative;
     font-family: 'Ysabeau SC', sans-serif;
     margin-top: 70px;
     margin-right: 0%;
     background-color:#51351c ;
     border-radius: 2%;
-    padding: 10% 10% 25% 10%;
+    padding: 10% 10% 15% 10%;
+}
+.sidenav {
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
+.sidenav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 12%;
+    
+}
+.sidenav div i {
+    font-size: 15px;
+    margin-left: 15px;
+    
+}
 .hamburger-menu:has(input:checked) + .sidebar {
     translate: 0;
 
@@ -135,6 +153,7 @@ transition: translate var(--animation-timing);
     font-family: 'Roboto Slab', serif;
     color: #0d4069;
     position: relative;
+    
     top: 21%;
     left: 5%;
     width: fit-content;
