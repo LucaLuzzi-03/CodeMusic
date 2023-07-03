@@ -243,16 +243,28 @@ transition: translate var(--animation-timing);
 }
 
 
-.disco:hover{
-    transform: scale(1.4);
-    transition: 0.9s;
-    margin: 20px 20px;
-}
+
 
 .disco:hover .disco-body{
     right: 0;
 }
 
+
+
+/* parte de cards */
+
+.container-cards{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows:22rem;
+    grid-template-columns:repeat(auto-fill, minmax(15rem, 1fr));
+    margin-top: 100px;
+}
+
+.carrd img{
+    height: 200px;
+    width: 200px;
+}
 
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
