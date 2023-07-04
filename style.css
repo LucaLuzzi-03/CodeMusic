@@ -329,25 +329,56 @@ parte galeria */
 
 
 
-
-.container-cards, .container-2, .container-3{
+.container-2{
     display: flex;
+    justify-content: space-evenly;
 }
 
 @media(min-width:1200px){
-    .carrd img{
-        height: 200px;
-        width: 200px;
+
+    .container-2{
+        flex-wrap: wrap;
+    }
+
+    .carrd-body img{
+    max-width: 600px;
+    width: 300px;
     }
 
     .carrd-body{
-        text-align: center;
-        padding: 28.6px;
+        text-align: start;
+        
     }
 
-    
+
+    .carrd{
+        height: 100%;
+        width: 100%;
+    }
+    .card-title{
+        border-top: 1px solid rgb(10, 10, 10);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
 }
 
+
+
+
+
+.buton{
+    border-left: 1px solid rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    color: black;
+}
+
+.carrd-body h4{
+    padding: 5px;
+    font-size:15px;
+}
 
 @media(max-width:500px){
     .container-2{
@@ -377,7 +408,7 @@ parte galeria */
     }
 }
 
-@media(max-width:360px){
+@media(min-width:360px){
     .carrd img{
         min-width: 174px;
         max-height: 270px;
@@ -387,11 +418,38 @@ parte galeria */
 }
 
 
+@media(min-width:370px){
+    .carrd img{
+        min-width: 174px;
+        max-height: 270px;
+        max-width: 181px;
+        overflow: hidden;
+    }
+}
+
 @media(min-width:390px){
     .carrd img{
         min-width: 174px;
         max-height: 270px;
         max-width: 189px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:414px){
+    .carrd img{
+        min-width: 174px;
+        max-height: 270px;
+        max-width: 201px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:412px){
+    .carrd img{
+        min-width: 174px;
+        max-height: 270px;
+        max-width: 200px;
         overflow: hidden;
     }
 }
@@ -406,7 +464,7 @@ parte galeria */
 .carrd-body{
     background-color: #db934f;
     
-    border: 2px solid rgb(10, 10, 10);
+    border: 1px solid rgb(10, 10, 10);
 }
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
