@@ -16,6 +16,7 @@ html {
     width: 100%;
     height: 70px;
     padding-bottom: 5px;
+    overflow: hidden;
 }
 
 nav{
@@ -150,7 +151,7 @@ gap: 20px;
 }
 .hero{
     height: 700px;
-    width: 100vw;
+    width: 98.9vw;
     background-image: url(Images/Crane\ Wives\ -\ Folk.jpg);
     background-size: cover;
 }
@@ -212,17 +213,13 @@ gap: 20px;
     overflow: hidden;
     
     position: relative;
-    box-shadow: 0px 0px 100px black;
     cursor: pointer;
     overflow: hidden;
 }
 
 
 
-.section1{
-    
-    background-color: #f5f5f5;
-}
+
 
 .disco-body{
     width: 100%;
@@ -260,21 +257,51 @@ gap: 20px;
     font-weight: 400;
 }
 
-.section1 h1{
+.section1 h1, .section2 h1{
     text-align: center;
-    margin-bottom: 60px;
-    text-decoration: underline #bb7433;
-    padding-top: 20px;
     
+    text-decoration: underline #bb7433;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid rgb(10, 10, 10);
 }
 
 
 
+.main-1{
+    background-color: #db934f;
+    border: 2px solid rgb(10, 10, 10);
+}
+
+.container-1{
+    border: 1px solid rgb(10, 10, 10);
+}
 
 .disco:hover .disco-body{
     right: 0;
 }
 
+
+/* 
+parte galeria */
+
+.galeria{
+    display: flex;
+}
+
+@media(max-width:500px){
+    .galeria img{
+        height: 10%;
+        width: 50%;
+    }
+}
+
+@media(min-width:1200px){
+    .galeria img{
+        height: 10%;
+        width: 50%;
+    }
+}
 
 
 /* parte de cards */
@@ -297,15 +324,23 @@ gap: 20px;
 
 
 
-button{
-    display: inline-block;
-    margin: 0 auto;
+.boton{
+    margin-left: 43%;
+    padding: 10px 60px;
+    border: 5px solid rgb(131, 90, 3);
+    background-color: #bb7433;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .carrd img{
     height: 200px;
     width: 200px;
 }
+
+
 
 .carrd{
     display: flex;
@@ -316,7 +351,7 @@ button{
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
 .formulario-contenedor {
-    width: 100vw;
+    width: 100%;
     padding: 4rem 2rem;
     background-color: #f5f5f5;
 }
@@ -411,7 +446,7 @@ button{
 
 /* Seccion FOOTER */
 footer {
-    width: 100vw;
+    width: 100%;
     padding: 2rem;
     background-color: #202120;
 }
