@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html {
@@ -206,6 +206,7 @@ gap: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 20px ;
 }
 
 @media(max-width:500px){
@@ -279,15 +280,29 @@ gap: 20px;
 }
 
 .section1 h1, .section2 h1{
-    text-align: center;
-    
-    text-decoration: underline #bb7433;
     font-size: 20px;
-    padding: 10px;
-    border: 1px solid rgb(10, 10, 10);
+    padding: 13px; 
+    border-right: 1px solid rgb(10, 10, 10);
+    margin: 0;
 }
 
 
+.titulo{
+    display: flex;
+    border: 1px solid rgb(10, 10, 10);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boton{
+    padding: 16px;
+    background-color: #db934f;
+    color: white; 
+    font-size: 15px;
+    text-decoration: none;
+    justify-content: right;
+    border-left:1px solid rgb(10, 10, 10);
+}
 
 .main-1{
     background-color: #db934f;
@@ -306,68 +321,72 @@ gap: 20px;
 /* 
 parte galeria */
 
-.galeria{
-    display: flex;
-}
 
-@media(max-width:500px){
-    .galeria img{
-        height: 10%;
-        width: 50%;
-    }
-}
-
-@media(min-width:1200px){
-    .galeria img{
-        height: 10%;
-        width: 50%;
-    }
-}
 
 
 /* parte de cards */
 
 
-.section2 h1{
-    text-align: center;
-    text-decoration: underline #bb7433;
-    margin-top: 70px;
-}
+
 
 .container-cards, .container-2, .container-3{
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows:22rem;
-    grid-template-columns:repeat(auto-fill, minmax(15rem, 1fr));
-    margin-top: 60px;
-}
-
-
-
-
-.boton{
-    margin-left: 43%;
-    padding: 10px 60px;
-    border: 5px solid rgb(131, 90, 3);
-    background-color: #bb7433;
-    border-radius: 20px;
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.carrd img{
-    height: 200px;
-    width: 200px;
-}
-
-
-
-.carrd{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+@media(min-width:1200px){
+    .carrd img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .carrd-body{
+        text-align: center;
+        padding: 28.6px;
+    }
+
+    
+}
+
+
+@media(max-width:500px){
+    .container-2{
+        flex-wrap: wrap;
+        display: flex;
+        
+    }
+    
+    .carrd{
+        flex-direction: row;
+    }
+
+    .carrd img{
+        min-width: 174px;
+        max-height: 270px;
+        max-width: 174px;
+        overflow: hidden;
+    }
+
+    .carrd-body{
+        
+    }
+
+    .card-title h4{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.carrd-body{
+    background-color: #db934f;
+    
+    border: 2px solid rgb(10, 10, 10);
 }
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
