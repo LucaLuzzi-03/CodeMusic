@@ -544,12 +544,17 @@ footer p {
     transition: all .3s;
   }
   
-  .footer-social a:hover {
-    color: #A4907C;
+  .footer-social i:hover {
+    color: #212529;
+    background-color: #fff;
+    transition: 0.5s;
   }
   
   .footer-social i {
-    font-size: 20px;
+    font-size: 25px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 10px;
   }
 
   .footer-bottom {
