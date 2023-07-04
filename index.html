@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/5422eb29c9.js" crossorigin="anonymous"></script>
     <title>Code Music</title>
 <body>
-    <header>
+    <header id="seccionInicio">
         <nav class="main">
             <div class="icon">
 <!--   <img src="Images/LogoPNG.png" alt="CodeMusic"> -->
@@ -48,7 +48,7 @@
 
     <!-- Esta seccion la hace IGNACIO - MAIN -->
     <main class="main-1">
-        <section class="section1">
+        <section class="section1" id="seccionArtistas">
             <div class="titulo">
 
                 <h1>Artistas recomendados</h1>
@@ -104,7 +104,7 @@
         </div>
 
         </section>
-        <section class="section2">
+        <section class="section2" id="seccionProductos">
 
             <div class="titulo">
 
@@ -190,7 +190,7 @@
         </section>
 
         <!-- seccion formulario hace LUCA -->
-        <section class="formulario-contenedor">
+        <section class="formulario-contenedor" id="seccionContacto">
             <div class="formulario-contenedor_titulo">
                 <h3>Contactame!</h3>
                 <div></div>
@@ -223,8 +223,25 @@
     </main>
 
     <!-- Esta seccion la hace LUCA - FOOTER -->
-    <footer>
-        <p>Derechos reservados @2023</p>
-    </footer>
+    <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-links">
+            <ul>
+              <li><a href="#seccionInicio">Inicio</a></li>
+              <li><a href="#seccionArtistas">Artistas</a></li>
+              <li><a href="#seccionProductos">Productos</a></li>
+              <li><a href="#seccionContacto">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Todos los derechos reservados</p>
+        </div>
+      </footer>
 </body>
 </html>
