@@ -31,10 +31,6 @@ html {
     padding-bottom: 5px;
 }
 
-.sidebar:hover{
-    right: 0;
-}
-
 
 nav{
     box-shadow: 0px 0px 100px black;
@@ -547,6 +543,7 @@ footer p {
      .sidebar div a:hover {
         color: #bb7433;
      }
+     
      .hamburger-menu:has(input:checked) + .sidebar {
         translate: 0;
      }
@@ -597,8 +594,9 @@ footer p {
     }
     .dropdown {
         float: left;
-        overflow: hidden;
-        font-family: 'Ysabeau SC', sans-serif;
+       /*  overflow: visible; */
+       overflow: hidden;
+    font-family: 'Ysabeau SC', sans-serif;
       }
     .dropdown .dropbtn {
         font-size: 25px;
