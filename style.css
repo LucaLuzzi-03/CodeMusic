@@ -1,3 +1,12 @@
+:root {
+    --bar-width: 35px ;
+    --bar-height: 8px;
+    --hamburger-gap: 5px;
+    --foreground: #333;
+    --background: white;
+    --animation-timing: 200ms 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +18,7 @@ html {
     font-size: 62,5% !important;
 }
 
+
 /* Aca empieza a estilar JADE */
 .main {
     top: 0;
@@ -18,21 +28,6 @@ html {
     height: 70px;
     padding-bottom: 5px;
 }
-
-
-@media(min-width:1200px){
-    .main{
-        overflow: hidden;
-    }
-}
-
-@media(max-width:500px){
-    header{
-        overflow: hidden;
-    }
-}
-
-
 
 .sidebar:hover{
     right: 0;
@@ -67,15 +62,6 @@ nav{
 .hamburger-menu, .sidebar {
     box-sizing: border-box;
     margin: 0;
-}
-:root {
-    --bar-width: 35px ;
-    --bar-height: 8px;
-    --hamburger-gap: 5px;
-    --foreground: #333;
-    --background: white;
-    --animation-timing: 200ms 
-
 }
 .hamburger-menu {
     display: flex;
@@ -581,3 +567,24 @@ footer p {
   .footer-bottom p {
     color: white;
   }
+
+
+
+  /* MEDIAS QUERIES */
+  @media(max-width:500px){
+      header{
+          overflow: hidden;
+      }
+  }
+
+  @media(max-width:800px){
+    header{
+        overflow: hidden;
+    }
+}
+
+  @media(min-width:1200px){
+    .main{
+        overflow: hidden;
+    }
+}
