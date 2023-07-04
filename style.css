@@ -362,7 +362,7 @@ parte galeria */
     .carrd img{
         min-width: 174px;
         max-height: 270px;
-        max-width: 174px;
+        max-width: 5vw;
         overflow: hidden;
     }
 
@@ -373,6 +373,25 @@ parte galeria */
     .card-title h4{
         font-size: 15px;
         padding: 10px;
+    }
+}
+
+@media(max-width:360px){
+    .carrd img{
+        min-width: 174px;
+        max-height: 270px;
+        max-width: 1vw;
+        overflow: hidden;
+    }
+}
+
+
+@media(min-width:390px){
+    .carrd img{
+        min-width: 174px;
+        max-height: 270px;
+        max-width: 189px;
+        overflow: hidden;
     }
 }
 
