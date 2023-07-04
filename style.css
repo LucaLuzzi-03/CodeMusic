@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 62,5% !important;
 }
 
 /* Aca empieza a estilar JADE */
@@ -551,10 +551,16 @@ footer p {
   }
   
   .footer-social i {
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 50px;
     border: 1px solid white;
     padding: 10px;
+  }
+
+  .footer-top {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-bottom {
@@ -565,17 +571,3 @@ footer p {
   .footer-bottom p {
     color: white;
   }
-  
-  /* Media queries para dispositivos móviles */
-  @media (max-width: 768px) {
-    .footer-top {
-        text-align: center;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-links li {
-      margin-right: 10px;
-    }
-  }
-  
