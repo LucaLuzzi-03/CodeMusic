@@ -331,40 +331,64 @@ parte galeria */
 
 .container-2{
     display: flex;
-    justify-content: space-evenly;
+
 }
 
-@media(min-width:1200px){
+@media(min-width:1024px){
 
     .container-2{
         flex-wrap: wrap;
     }
 
     .carrd-body img{
-    max-width: 600px;
-    width: 300px;
+    width: 100%;
     }
 
     .carrd-body{
         text-align: start;
-        
+
     }
-
-
     .carrd{
-        height: 100%;
-        width: 100%;
+        width: 25%;
     }
     .card-title{
         border-top: 1px solid rgb(10, 10, 10);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:764px) {
+
+    .container-2{
+        flex-wrap: wrap;
+    }
+
+    .carrd{
+        width: 25%;
+    }
+
+    .carrd-body img{
+        width: 100%;
     }
 }
 
 
+@media (max-width:500px){
+    .container-2{
+        flex-wrap: wrap;
+    }
 
+    .carrd{
+        width: 50%;
+    }
+
+    .carrd-body img{
+        width: 100%;
+    }
+
+}
 
 
 .buton{
@@ -380,79 +404,7 @@ parte galeria */
     font-size:15px;
 }
 
-@media(max-width:500px){
-    .container-2{
-        flex-wrap: wrap;
-        display: flex;
-        
-    }
-    
-    .carrd{
-        flex-direction: row;
-    }
 
-    .carrd img{
-        min-width: 174px;
-        max-height: 270px;
-        max-width: 5vw;
-        overflow: hidden;
-    }
-
-    .carrd-body{
-        
-    }
-
-    .card-title h4{
-        font-size: 15px;
-        padding: 10px;
-    }
-}
-
-@media(min-width:360px){
-    .carrd img{
-        min-width: 174px;
-        max-height: 270px;
-        max-width: 1vw;
-        overflow: hidden;
-    }
-}
-
-
-@media(min-width:370px){
-    .carrd img{
-        min-width: 174px;
-        max-height: 270px;
-        max-width: 181px;
-        overflow: hidden;
-    }
-}
-
-@media(min-width:390px){
-    .carrd img{
-        min-width: 174px;
-        max-height: 270px;
-        max-width: 189px;
-        overflow: hidden;
-    }
-}
-
-@media(min-width:414px){
-    .carrd img{
-        min-width: 174px;
-        max-height: 270px;
-        max-width: 201px;
-        overflow: hidden;
-    }
-}
-
-@media(min-width:412px){
-    .carrd img{
-        min-width: 174px;
-        max-height: 270px;
-        max-width: 200px;
-        overflow: hidden;
-    }
-}
 
 
 
