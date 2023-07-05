@@ -170,6 +170,7 @@ nav{
     font-size: 20px;
     padding: 13px; 
     border-right: 1px solid rgb(10, 10, 10);
+    border-left: 1px solid rgb(10, 10, 10);
     margin: 0;
 }
 
@@ -179,16 +180,23 @@ nav{
     border: 1px solid rgb(10, 10, 10);
     flex-direction: row;
     justify-content: space-between;
+    background-color: #db934f;
 }
 
 .boton{
     padding: 16px;
     background-color: #db934f;
-    color: white; 
+    color: black; 
     font-size: 15px;
     text-decoration: none;
     justify-content: right;
     border-left:1px solid rgb(10, 10, 10);
+    border-right: 1px solid rgb(10, 10, 10);
+}
+
+.boton:hover{
+    background-color: #e9ac73;
+    transition: 0.5s;
 }
 
 .main-1{
@@ -208,7 +216,13 @@ nav{
 /* 
 parte galeria */
 
+.galeria{
+    display: flex;
+}
 
+.galeria img{
+    width: 50%;
+}
 
 
 /* parte de cards */
@@ -241,8 +255,15 @@ parte galeria */
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        text-align: left;
     }
+
+    .card-title h4{
+        width: 90%;
+        height: 100%;
+    }
+
+    
 }
 
 @media (min-width:764px) {
@@ -257,6 +278,17 @@ parte galeria */
 
     .carrd-body img{
         width: 100%;
+    }
+
+    .card-title{
+        border-top: 1px solid rgb(10, 10, 10);
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .card-title h4{
+        width: 90%;
     }
 }
 
@@ -274,6 +306,17 @@ parte galeria */
         width: 100%;
     }
 
+    .card-title{
+        border-top: 1px solid rgb(10, 10, 10);
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+
+    .card-title h4{
+        width: 90%;
+    }
 }
 
 
@@ -285,16 +328,32 @@ parte galeria */
     color: black;
 }
 
-.carrd-body h4{
-    padding: 5px;
-    font-size:15px;
+.buton:hover{
+    color: white;
+    background-color: #b16c2c ;
+    transition: 0.5s;
 }
 
 
 
 
+.carrd-body h4{
+    font-size:15px;
+    padding: 10px 6px;
+}
 
+.carrd-body a i{
+    font-size: 20px;
+    padding: 5px 5px;
+}
 
+.card-info{
+    border-top: 0.5px solid black;
+    height: 20px;
+    font-size: 15px;
+    padding-left: 5px;
+    text-align: center;
+}
 
 
 
