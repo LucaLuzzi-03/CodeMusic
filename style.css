@@ -31,10 +31,6 @@ html {
     padding-bottom: 5px;
 }
 
-.sidebar:hover{
-    right: 0;
-}
-
 
 nav{
     box-shadow: 0px 0px 100px black;
@@ -82,7 +78,7 @@ nav{
     color: #071064;
     position: relative;
     top: 18%;
-    left: 25%;
+    left: 10%;
     width: fit-content;
     height: fit-content;
 
@@ -656,8 +652,8 @@ footer p {
     }
     .dropdown {
         float: left;
-        overflow: hidden;
-        font-family: 'Ysabeau SC', sans-serif;
+       overflow: hidden;
+       font-family: 'Ysabeau SC', sans-serif;
       }
     .dropdown .dropbtn {
         font-size: 25px;
@@ -669,11 +665,15 @@ footer p {
         font-family: inherit;
         margin: 0; 
     }
+    .dropdown .dropbtn:hover {
+        color: #bb7433;
+    }
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 160px;
+        min-width: 186px;
+        margin-top: 3px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }      
@@ -690,6 +690,7 @@ footer p {
       }
     .dropdown:hover .dropdown-content {
         display: block;
+        position: fixed;
       }
     
 
