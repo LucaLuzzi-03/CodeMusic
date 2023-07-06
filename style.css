@@ -680,7 +680,7 @@ footer p {
             border: none;
             outline: none;
             color: white;
-            padding: 14px 16px;
+            padding: 14px 0px;
             background-color: inherit;
             font-family: inherit;
             margin: 0; 
@@ -714,7 +714,7 @@ footer p {
           }
 }
 
-  @media(max-width:1200px){
+  @media(min-width:801px){
     .main{
         overflow: hidden
     }
