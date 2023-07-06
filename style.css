@@ -614,9 +614,80 @@ footer p {
     header{
         overflow: hidden;
     }
+    
+        /* Jade */
+        .hamburger-menu, .checkbox, .sidebar, .sidenav {
+            display: none;
+        }
+        .contacts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 4%;
+        }
+        
+        .contacts p {
+            margin: 25px;
+            font-family: 'Ysabeau SC', sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .contacts i {
+            font-size: 30px;
+            margin-left: 24px;
+        }
+        .contacts a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .contacts a:hover {
+            color: #bb7433;
+        }
+        .dropdown {
+            float: left;
+           overflow: hidden;
+           font-family: 'Ysabeau SC', sans-serif;
+          }
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0; 
+        }
+        .dropdown .dropbtn:hover {
+            color: #bb7433;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 186px;
+            margin-top: 3px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }      
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            position: fixed;
+          }
 }
 
-  @media(min-width:1200px){
+  @media(max-width:1200px){
     .main{
         overflow: hidden
     }
