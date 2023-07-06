@@ -557,6 +557,9 @@ footer p {
       header{
           overflow: hidden;
       }
+      .contacts {
+        display: none;
+      }
       /* Hamburger, Jade */
       .hamburger-menu, .sidebar {
         box-sizing: border-box;
@@ -568,7 +571,7 @@ footer p {
         gap: var(--hamburger-gap);
         width: max-content;
         position: relative;
-        left: 40%;
+        left: 45%;
         top:18px;
         z-index: 2;
         cursor: pointer;
@@ -600,7 +603,7 @@ footer p {
         margin-right: 0%;
         background-color:#51351c ;
         border-radius: 2%;
-        padding: 10% 10% 15% 10%;
+        padding: 10% 22% 60% 10%;
         right: 0%;
     
      }
@@ -638,11 +641,6 @@ footer p {
     header{
         overflow: hidden;
     }
-    /* Jade */
-    .hamburger-menu, .checkbox, .sidebar, .sidenav {
-        display: none;
-    }
-
 }
 
   @media(min-width:1200px){
