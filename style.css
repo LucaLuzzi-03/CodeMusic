@@ -173,7 +173,7 @@ nav{
 
 .titulo{
     display: flex;
-    border: 1px solid rgb(10, 10, 10);
+    border: 2px solid rgb(10,10,10);
     flex-direction: row;
     justify-content: space-between;
     background-color: #db934f;
@@ -257,9 +257,13 @@ parte galeria */
     .card-title h4{
         width: 90%;
         height: 100%;
+        padding: 10px 6px;
     }
 
-    
+
+    .card-info h6{
+        padding-right: 5px;
+    }
 }
 
 @media (min-width:764px) {
@@ -285,6 +289,11 @@ parte galeria */
 
     .card-title h4{
         width: 90%;
+        padding: 10px 6px;
+    }
+
+    .carrd-info{
+        padding-right: 5px;
     }
 }
 
@@ -313,6 +322,10 @@ parte galeria */
     .card-title h4{
         width: 90%;
     }
+
+    .card-info h6{
+        padding-right: 2px;
+    }
 }
 
 
@@ -335,7 +348,6 @@ parte galeria */
 
 .carrd-body h4{
     font-size:15px;
-    padding: 10px 6px;
 }
 
 .carrd-body a i{
@@ -345,18 +357,33 @@ parte galeria */
 
 .card-info{
     border-top: 0.5px solid black;
-    height: 20px;
+    display: flex;
     font-size: 15px;
     padding-left: 5px;
-    text-align: center;
+    justify-content: space-between;
+}
+
+
+.card-info h6{
+    border-right: 1px solid black;
+    margin: 0;
+    padding-top: 8px;
+    align-items: center;
+
+}
+
+.card-info p{
+    padding-top: 8px;
+    border-left: 1px solid black;
+    margin: 0;
+    align-items: center;
 }
 
 
 
 
-.carrd-body{
-    background-color: #db934f;
-    
+
+.carrd{
     border: 1px solid rgb(10, 10, 10);
 }
 
