@@ -54,10 +54,16 @@ nav{
 }
 
 .hero{
-    height: 700px;
     width: 100%;
-    background-image: url(Images/Crane\ Wives\ -\ Folk.jpg);
-    background-size: cover;
+    height: 450px;
+    background-size: contain;
+    
+}
+.hero img {
+    width: 100%;
+    height: 450px;
+
+    
 }
 .hero h2 {
     font-weight: 500;
@@ -759,7 +765,7 @@ footer p {
           }
 }
 
-  @media(min-width:801px){
+  @media(min-width:1200px){
     .main{
         overflow: hidden
     }
