@@ -637,7 +637,7 @@ footer p {
      }
     }
 
-  @media(max-width:800px){
+  @media(min-width:501px){
     header{
         overflow: hidden;
     }
@@ -714,7 +714,7 @@ footer p {
           }
 }
 
-  @media(min-width:801px){
+  @media(min-width:1200px){
     .main{
         overflow: hidden
     }
