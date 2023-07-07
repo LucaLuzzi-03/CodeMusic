@@ -176,12 +176,25 @@ nav{
     border: 2px solid rgb(10,10,10);
     flex-direction: row;
     justify-content: space-between;
-    background-color: #db934f;
+    background: #FFB75E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
 }
 
 .boton{
     padding: 16px;
-    background-color: #db934f;
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
+
+
     color: black; 
     font-size: 15px;
     text-decoration: none;
@@ -196,7 +209,13 @@ nav{
 }
 
 .main-1{
-    background-color: #db934f;
+    background: #F2994A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
     border: 2px solid rgb(10, 10, 10);
 }
 
@@ -266,7 +285,7 @@ parte galeria */
     }
 }
 
-@media (min-width:764px) {
+@media (min-width:501px) {
 
     .container-2{
         flex-wrap: wrap;
