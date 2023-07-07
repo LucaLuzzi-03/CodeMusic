@@ -55,39 +55,11 @@ nav{
 
 .hero{
     width: 100%;
-    height: 450px;
-    background-size: contain;
-    
+    height: 600px;
+   
 }
 .hero img {
-    width: 100%;
-    height: 450px;
-
-    
-}
-.hero h2 {
-    font-weight: 500;
-    font-size: 55px;
-    font-family: 'Roboto Slab', serif;
-    color: #0d4069;
-    position: relative;
-    
-    top: 21%;
-    left: 5%;
-    width: fit-content;
-    height: fit-content;
-    }
-.hero p {
-    font-weight: 400;
-    font-size: 50px;
-    font-family: 'Roboto Slab', serif;
-    color: #071064;
-    position: relative;
-    top: 18%;
-    left: 10%;
-    width: fit-content;
-    height: fit-content;
-
+  
 }
 /* Aca empieza a estilar IGNACIO */
 
