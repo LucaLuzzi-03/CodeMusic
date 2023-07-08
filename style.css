@@ -29,11 +29,13 @@ html {
     width: 100%;
     height: 70px;
     padding-bottom: 5px;
+    position: sticky;
 }
 
 
 nav{
     box-shadow: 0px 0px 100px black;
+    position: sticky;
 }
 
 .icon {
@@ -247,13 +249,25 @@ parte galeria */
 }
 
 
-
 .slider{
     background-image: url(Images/galeria.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
     animation: animate 8s infinite;
+}
+
+.slider-container2{
+    width: 100%;
+    height: 500px;
+}
+
+.slider2{
+    background-image: url(Images/image.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    animation: animate1 8s infinite;
 }
 
 @keyframes animate{
@@ -266,6 +280,7 @@ parte galeria */
         background-size: cover;
     }
 }
+
 
 @media(min-width:1024px){
 
@@ -284,14 +299,14 @@ parte galeria */
     .carrd{
         width: 25%;
     }
-    .card-title{
+    .carrd-title{
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
         flex-direction: row;
         text-align: left;
     }
 
-    .card-title h4{
+    .carrd-title h4{
         width: 90%;
         height: 100%;
         padding: 10px 6px;
@@ -317,14 +332,14 @@ parte galeria */
         width: 100%;
     }
 
-    .card-title{
+    .carrd-title{
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
         flex-direction: row;
         text-align: left;
     }
 
-    .card-title h4{
+    .carrd-title h4{
         width: 90%;
         padding: 10px 6px;
     }
@@ -333,6 +348,7 @@ parte galeria */
         padding-right: 5px;
     }
 }
+
 
 
 @media (max-width:500px){
@@ -348,7 +364,7 @@ parte galeria */
         width: 100%;
     }
 
-    .card-title{
+    .carrd-title{
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
         flex-direction: row;
@@ -356,12 +372,20 @@ parte galeria */
     }
 
 
-    .card-title h4{
+    .carrd-title h4{
         width: 90%;
     }
 
     .card-info h6{
         padding-right: 2px;
+    }
+
+    .slider-container, .slider-container2{
+        height: 240px;
+    }
+
+    .cajita{
+        margin-top: 15px;
     }
 }
 
@@ -379,6 +403,7 @@ parte galeria */
     background-color: #b16c2c ;
     transition: 0.5s;
 }
+
 
 
 
@@ -418,10 +443,22 @@ parte galeria */
 
 
 
+.slider-container2 h1{
+    text-align: center;
+    padding-top: 225px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.575);
+    font-weight: 800;
+}
 
+.slider-container2 h1:hover{
+    transform: scale(1.1);
+    padding-bottom: 20px;
+    transition: 1s;
+}
 
 .carrd{
-    border: 1px solid rgb(10, 10, 10);
+    border: 1px solid rgb(85, 83, 83);
 }
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
