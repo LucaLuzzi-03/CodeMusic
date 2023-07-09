@@ -270,6 +270,31 @@ parte galeria */
     animation: animate1 8s infinite;
 }
 
+.slider-container3{
+    width: 100%;
+    height: 500px;
+    border-top: 1px solid black;
+}
+
+.slider3{
+    background-image: url(Images/image.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    animation: animate2 8s infinite;
+}
+
+@keyframes animate2{
+    50%{
+        background-image: url(Images/galeriamusica2.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(Images/galeriamusica3.png);
+        background-size: cover;
+    }
+}
+
 @keyframes animate{
     50%{
         background-image: url(Images/galeria2.jpg);
@@ -380,7 +405,7 @@ parte galeria */
         padding-right: 2px;
     }
 
-    .slider-container, .slider-container2{
+    .slider-container, .slider-container2, .slider-container3{
         height: 240px;
     }
 
@@ -443,12 +468,14 @@ parte galeria */
 
 
 
-.slider-container2 h1{
+.slider-container2 a h1{
     text-align: center;
     padding-top: 225px;
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.575);
+    color: rgb(255, 255, 255);
     font-weight: 800;
+    text-decoration: none;
+
 }
 
 .slider-container2 h1:hover{
