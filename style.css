@@ -550,6 +550,23 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
     justify-content: space-between;
 }
 
+.imagen-container{
+    width: 1000px;
+}
+
+.textos{
+    border: 1px solid black;
+    padding-left: 15px;
+}
+
+.lolxd{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+    margin: 0;
+}
+
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
 .formulario-contenedor {
