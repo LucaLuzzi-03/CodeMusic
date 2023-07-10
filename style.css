@@ -482,13 +482,14 @@ parte galeria */
 
 .formulario-contenedor_formulario {
     width: 100%;
+    display: flex;
 }
 
 .formulario-contenedor_formulario form {
     width: 100%;
     padding: 2rem;
     background-color: #A4907C;
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.7);
 }
 
@@ -786,6 +787,16 @@ footer p {
             display: block;
             position: fixed;
           }
+}
+
+@media(min-width: 800px) {
+    .formulario-contenedor_formulario {
+        justify-content: center;
+    }
+
+    .formulario-contenedor_formulario form {
+        width: 800px;
+    }
 }
 
   @media(min-width:1200px){
