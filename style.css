@@ -69,44 +69,40 @@ nav{
 .carousel-content .text-1 {
     position: absolute;
     z-index: 20;
-    font-size: 50px; 
-    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 70px; 
     left: 15%;
     bottom: 40%;
-    border-style: solid;
 }
 .carousel-content .text-2 {
     position: absolute;
     z-index: 20;
-    font-size: 50px; 
-    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 60px; 
     left: 15%;
-    bottom: 25%;
-    border-style: solid;
+    bottom: 30.5%;
 }
-#logo-1 {
-    background-color: aliceblue;
-    color: #333;
+#logo-punk {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FA7500;
 }
-#logo-2 {
-    background-color: darkblue;
-    color: aqua;
+#logo-pop {
+    font-family: 'Crimson Text', serif;
+    color: whitesmoke
 }
-#logo-3 {
-    background-color: #A4907C;
-    color: #212529;
+#logo-rap {
+    font-family: 'Comfortaa', cursive;
+    color: white;
 }
-#genre-1 {
-    background-color: #F2C94C;
-    color: azure;
+#genre-punk {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FAD23F;
 }
-#genre-2 {
-    background-color: violet;
-    color: #51351c;
+#genre-pop {
+    font-family: 'Crimson Text', serif;
+    color: #A7EDE7;
 }
-#genre-3 {
-    background-color: #f46b45;
-    color: blanchedalmond;
+#genre-rap {
+    font-family: 'Comfortaa', cursive;
+    color: #B70404;
 }
 /* Aca empieza a estilar IGNACIO */
 
