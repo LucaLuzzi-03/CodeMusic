@@ -372,9 +372,15 @@ parte galeria */
     .card-info h6{
         padding-right: 5px;
     }
+
+    .slider-container2 a h1{
+        font-size:  50px; 
+        padding: 210px ;
+    }
+    
 }
 
-@media (min-width:501px) {
+@media (min-width:701px) {
 
     .container-2{
         flex-wrap: wrap;
@@ -388,16 +394,21 @@ parte galeria */
         width: 100%;
     }
 
+    
+
     .carrd-title{
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
         flex-direction: row;
         text-align: left;
+        height: 40px ;
+        overflow: hidden;
     }
 
     .carrd-title h4{
         width: 90%;
         padding: 10px 6px;
+        margin-bottom: 0;
     }
 
     .carrd-info{
@@ -407,9 +418,14 @@ parte galeria */
 
 
 
-@media (max-width:500px){
+@media (max-width:700px){
     .container-2{
         flex-wrap: wrap;
+    }
+
+    .slider-container2 a h1{
+        font-size: 30px;
+        padding-top: 80px;
     }
 
     .carrd{
@@ -501,8 +517,8 @@ parte galeria */
 
 .slider-container2 a h1{
     text-align: center;
-    padding: 225px ;
-    font-size: 50px;
+    padding: 0 auto;
+    
     color: rgb(255, 255, 255);
     font-weight: 800;
     text-decoration: none;
