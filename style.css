@@ -64,18 +64,49 @@ nav{
     max-width: 100%;
     max-height: 600px;
     object-fit: cover;
+
 }
-.carousel-content{
+.carousel-content .text-1 {
     position: absolute;
     z-index: 20;
     font-size: 50px; 
     font-family: 'Ysabeau SC', sans-serif;
-    left: 5%;
-    bottom: 20%;
-    color: blueviolet;
+    left: 15%;
+    bottom: 40%;
     border-style: solid;
-    background-color: #212529;
-
+}
+.carousel-content .text-2 {
+    position: absolute;
+    z-index: 20;
+    font-size: 50px; 
+    font-family: 'Ysabeau SC', sans-serif;
+    left: 15%;
+    bottom: 25%;
+    border-style: solid;
+}
+#logo-1 {
+    background-color: aliceblue;
+    color: #333;
+}
+#logo-2 {
+    background-color: darkblue;
+    color: aqua;
+}
+#logo-3 {
+    background-color: #A4907C;
+    color: #212529;
+}
+#genre-1 {
+    background-color: #F2C94C;
+    color: azure;
+}
+#genre-2 {
+    background-color: violet;
+    color: #51351c;
+}
+#genre-3 {
+    background-color: #f46b45;
+    color: blanchedalmond;
 }
 /* Aca empieza a estilar IGNACIO */
 
@@ -83,7 +114,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 20px ;
+    margin: 20px;
 }
 
 @media(max-width:500px){
@@ -240,7 +271,7 @@ parte galeria */
 
 .container-2{
     display: flex;
-
+    cursor: pointer;
 }
 
 .slider-container{
@@ -268,6 +299,31 @@ parte galeria */
     height: 100%;
     width: 100%;
     animation: animate1 8s infinite;
+}
+
+.slider-container3{
+    width: 100%;
+    height: 500px;
+    border-top: 1px solid black;
+}
+
+.slider3{
+    background-image: url(Images/image.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    animation: animate2 8s infinite;
+}
+
+@keyframes animate2{
+    50%{
+        background-image: url(Images/galeriamusica2.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(Images/galeriamusica3.png);
+        background-size: cover;
+    }
 }
 
 @keyframes animate{
@@ -380,7 +436,7 @@ parte galeria */
         padding-right: 2px;
     }
 
-    .slider-container, .slider-container2{
+    .slider-container, .slider-container2, .slider-container3{
         height: 240px;
     }
 
@@ -443,12 +499,14 @@ parte galeria */
 
 
 
-.slider-container2 h1{
+.slider-container2 a h1{
     text-align: center;
-    padding-top: 225px;
+    padding: 225px ;
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.575);
+    color: rgb(255, 255, 255);
     font-weight: 800;
+    text-decoration: none;
+
 }
 
 .slider-container2 h1:hover{
@@ -460,6 +518,22 @@ parte galeria */
 .carrd{
     border: 1px solid rgb(85, 83, 83);
 }
+
+
+
+/* parte de la otra pagina */
+
+.body-venta{
+    background: #F2994A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sproduct{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
 .formulario-contenedor {
