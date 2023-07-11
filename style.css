@@ -567,11 +567,11 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
 /* Aca empieza a estilar LUCA - Seccion FORMULARIO */
 .formulario-contenedor {
     width: 100%;
-    padding: 4rem 2rem;
-    background-color: #f5f5f5;
+    /* padding: 4rem 2rem; */
+    /* background-color: #f5f5f5; */
 }
 
-.formulario-contenedor_titulo {
+/* .formulario-contenedor_titulo {
     width: 100%;
     margin-bottom: 3rem;
     text-align: center;
@@ -579,20 +579,30 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
 
 .formulario-contenedor_titulo h3 {
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     text-decoration: underline #A4907C;
-}
+} */
 
 .formulario-contenedor_formulario {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario-contenedor_formulario form {
     width: 100%;
     padding: 2rem;
-    background-color: #A4907C;
-    border-radius: 10px;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* border-radius: 4px; */
+    border: 1px solid black;
     box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.7);
+}
+
+.formulario-contenedor_formulario form h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .formulario-grupo {
@@ -611,7 +621,7 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
     width: 100%;
     text-indent: 1rem;
     padding: .5rem .5rem .5rem 0;
-    border: none;
+    border: 1px solid black;
     outline: none;
     border-radius: .5rem;
 }
@@ -632,7 +642,7 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
     width: 100%;
     height: 4rem;
     padding: .5rem .5rem .5rem 1rem;
-    border: none;
+    border: 1px solid black;
     outline: none;
     border-radius: .5rem;
     resize: none;
@@ -641,12 +651,12 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
 .formulario-grupo_botones {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .formulario-grupo_botones button {
     padding: .6rem 1.2rem;
-    border: none;
+    border: 1px solid black;
     border-radius: .5rem;
     background-color: #f5f5f5;
     font-size: 1rem;
@@ -655,8 +665,70 @@ background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, F
     transition: all .3s;
 }
 
+.formulario-grupo_botones .btn-reset {
+    margin-left: 1rem;
+}
+
 .formulario-grupo_botones button:hover {
     transform: scale(1.1);
+}
+
+.formulario-contenedor_formulario .formulario-nosotros {
+    width: 100%;
+    padding: 2rem;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* border-radius: 4px; */
+    border: 1px solid black;
+    box-shadow: 10px 10px 40px -20px rgba(0,0,0,0.7);
+}
+
+.formulario-contenedor_formulario .formulario-nosotros h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario-nosotros .datos-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.formulario-nosotros .datos-contacto p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.formulario-nosotros .datos-direccion p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.formulario-nosotros .datos-horarios {
+    padding-top: 1rem;
+}
+
+.formulario-nosotros .datos-horarios span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.formulario-nosotros .datos-horarios p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.formulario-nosotros .nosotros-imagen {
+    margin-top: 1rem;
+    width: 100%;
+    height: 180px;
+    background-image: url('./Images/image.jpg');
+    background-size: cover;
+    background-position: top;
+    border-radius: 4px;
+    border: 1px solid black;
 }
 
 /* Seccion FOOTER */
@@ -889,6 +961,14 @@ footer p {
             display: block;
             position: fixed;
           }
+
+          .formulario-nosotros .datos-contacto {
+            gap: 1.6rem;
+          }
+}
+
+@media(min-width: 800px) {
+
 }
 
   @media(min-width:1200px){
@@ -965,6 +1045,17 @@ footer p {
         display: block;
         position: fixed;
       }
-    
+
+      .formulario-contenedor_formulario {
+        flex-direction: row;
+      }
+
+      .formulario-contenedor_formulario form {
+        width: 50%;
+      }
+
+      .formulario-contenedor_formulario .formulario-nosotros {
+        width: 50%;
+      }
 
 }
