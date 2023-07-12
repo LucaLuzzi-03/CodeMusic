@@ -20,16 +20,18 @@ html {
 
 
 /* Aca empieza a estilar JADE */
-.main {
+.main-nav {
     top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #A4907C;
-    color: aliceblue;
+    background: rgb(238,209,105);
+    background: linear-gradient(61deg, rgba(238,209,105,1) 0%, rgba(224,153,60,1) 70%);
+    color: #d87c26;
     width: 100%;
     height: 70px;
     padding-bottom: 5px;
-    position: sticky;
+    position: fixed;
+    z-index:100
 }
 
 
@@ -45,41 +47,17 @@ nav{
     
 }
 .icon p {
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Ysabeau SC', sans-serif;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 5.5px;
     margin-left: 12px;
 }
 .icon img {
     margin-top: 22px;
 }
 
-.hero{
-    width: 100%;
-    height: fit-content;
-   
-}
-.hero img {
-    max-width: 100%;
-    max-height: 600px;
-    object-fit: cover;
 
-}
-.carousel-content .text-1 {
-    position: absolute;
-    z-index: 20;
-    font-size: 70px; 
-    left: 15%;
-    bottom: 40%;
-}
-.carousel-content .text-2 {
-    position: absolute;
-    z-index: 20;
-    font-size: 60px; 
-    left: 15%;
-    bottom: 30.5%;
-}
 #logo-punk {
     font-family: 'Bebas Neue', sans-serif;
     color: #FA7500;
@@ -94,7 +72,7 @@ nav{
 }
 #genre-punk {
     font-family: 'Bebas Neue', sans-serif;
-    color: #FAD23F;
+    color: #FA7500;
 }
 #genre-pop {
     font-family: 'Crimson Text', serif;
@@ -969,18 +947,16 @@ footer p {
           }
 }
 
-@media(min-width: 800px) {
-
-}
-
   @media(min-width:1200px){
     .main{
         overflow: hidden
     }
-        /* Jade */
+        /* Jade */ 
+        /* Hamburger */
     .hamburger-menu, .checkbox, .sidebar, .sidenav {
         display: none;
     }
+    /* Navbar */
     .contacts {
         display: flex;
         align-items: center;
@@ -1060,4 +1036,31 @@ footer p {
         width: 50%;
       }
 
+    /* Hero */
+    .hero{
+        width: 100%;
+        height: fit-content;
+
+    }
+    .hero img {
+        max-width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+    
+    }
+    .carousel-content .text-1 {
+        position: absolute;
+        z-index: 20;
+        font-size: 70px; 
+        left: 15%;
+        bottom: 40%;
+    }
+    .carousel-content .text-2 {
+        position: absolute;
+        z-index: 20;
+        font-size: 60px; 
+        left: 15%;
+        bottom: 30.5%;
+    }
 }
+
