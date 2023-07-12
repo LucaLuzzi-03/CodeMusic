@@ -937,7 +937,7 @@ footer p {
             border: none;
             outline: none;
             color: white;
-            padding: 14px 0px;
+            padding: 10px 0px;
             background-color: inherit;
             font-family: inherit;
             margin: 0; 
@@ -950,7 +950,7 @@ footer p {
             position: absolute;
             background-color: #f9f9f9;
             min-width: 186px;
-            margin-top: 3px;
+            margin-top: autogit;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
           }      
@@ -988,24 +988,24 @@ footer p {
     .carousel-content .text-1 {
         position: absolute;
         z-index: 20;
-        font-size: 55px; 
+        font-size: 38px; 
         left: 15%;
-        bottom: 40%;
+        bottom: 32%;
     }
     .carousel-content .text-2 {
         position: absolute;
         z-index: 20;
-        font-size: 45px; 
+        font-size: 32px; 
         left: 15%;
-        bottom: 30.5%;
+        bottom: 22%;
     }
     .carousel-content .text-3 {
         position: absolute;
-        font-size: 19px;
+        font-size: 12px;
         z-index: 20;
         border-style: solid;
         left: 15%;
-        bottom: 12%;
+        bottom: 2%;
         padding: 8px;
         border-radius: 5%;
     }
@@ -1014,7 +1014,6 @@ footer p {
     header{
         overflow: hidden;
     }
-    
     /* Jade */
         .hamburger-menu, .checkbox, .sidebar, .sidenav {
             display: none;
