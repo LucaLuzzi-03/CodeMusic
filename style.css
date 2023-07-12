@@ -20,7 +20,7 @@ html {
 
 
 /* Aca empieza a estilar JADE */
-.main {
+.main-nav {
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,8 @@ html {
     width: 100%;
     height: 70px;
     padding-bottom: 5px;
-    position: sticky;
+    position: fixed;
+    z-index:100
 }
 
 
