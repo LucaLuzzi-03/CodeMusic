@@ -821,6 +821,8 @@ footer p {
       .hamburger-menu, .sidebar {
         box-sizing: border-box;
         margin: 0;
+        position: absolute;
+        z-index: 1;
      }
      .hamburger-menu {
         display: flex;
