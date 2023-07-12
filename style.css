@@ -821,8 +821,6 @@ footer p {
       .hamburger-menu, .sidebar {
         box-sizing: border-box;
         margin: 0;
-        position: absolute;
-        z-index: 1;
      }
      .hamburger-menu {
         display: flex;
@@ -900,6 +898,13 @@ footer p {
     header{
         overflow: hidden;
     }
+    .icon p {
+        font-size: 24px;
+        font-family: 'Ysabeau SC', sans-serif;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-left: 5px;
+     }
     
         /* Jade */
         .hamburger-menu, .checkbox, .sidebar, .sidenav {
@@ -915,11 +920,11 @@ footer p {
         .contacts p {
             margin: 25px;
             font-family: 'Ysabeau SC', sans-serif;
-            font-size: 25px;
+            font-size: 15px;
             font-weight: 300;
         }
         .contacts i {
-            font-size: 30px;
+            font-size: 15px;
             margin-left: 24px;
         }
         .contacts a {
@@ -935,11 +940,11 @@ footer p {
            font-family: 'Ysabeau SC', sans-serif;
           }
         .dropdown .dropbtn {
-            font-size: 25px;
+            font-size: 15px;
             border: none;
             outline: none;
             color: white;
-            padding: 10px 0px;
+            padding: 14px 0px;
             background-color: inherit;
             font-family: inherit;
             margin: 0; 
@@ -951,8 +956,8 @@ footer p {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 186px;
-            margin-top: autogit;
+            min-width: 118px;
+            margin-top: 10px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
           }      
@@ -990,14 +995,14 @@ footer p {
     .carousel-content .text-1 {
         position: absolute;
         z-index: 20;
-        font-size: 38px; 
+        font-size: 40px; 
         left: 15%;
         bottom: 32%;
     }
     .carousel-content .text-2 {
         position: absolute;
         z-index: 20;
-        font-size: 32px; 
+        font-size: 35px; 
         left: 15%;
         bottom: 22%;
     }
@@ -1007,15 +1012,32 @@ footer p {
         z-index: 20;
         border-style: solid;
         left: 15%;
-        bottom: 2%;
+        bottom: 4%;
         padding: 8px;
         border-radius: 5%;
+    }
+    #logo-rap {
+        font-size: 35px;
+    }
+    #genre-rap {
+        font-size: 30px;
+    }
+    #shop-rap {
+        font-size: 10px;
     }
 }
   @media(min-width: 801px){
     header{
         overflow: hidden;
     }
+    .icon p {
+        font-size: 30px;
+        font-family: 'Ysabeau SC', sans-serif;
+        font-weight: 600;
+        margin-top: 7.5px;
+        margin-left: 12px;
+     }
+    
     /* Jade */
         .hamburger-menu, .checkbox, .sidebar, .sidenav {
             display: none;
@@ -1126,6 +1148,15 @@ footer p {
         padding: 8px;
         border-radius: 5%;
     }
+    #logo-rap {
+        font-size: 45px;
+    }
+    #genre-rap {
+        font-size: 35px;
+    }
+    #shop-rap {
+        font-size: 16px;
+    }
 }
 
   @media(min-width:1200px){
@@ -1137,7 +1168,17 @@ footer p {
     .hamburger-menu, .checkbox, .sidebar, .sidenav {
         display: none;
     }
+
+     .icon p {
+        font-size: 35px;
+        font-family: 'Ysabeau SC', sans-serif;
+        font-weight: 600;
+        margin-top: 5.5px;
+        margin-left: 12px;
+     }
+
     /* Navbar */
+
     .contacts {
         display: flex;
         align-items: center;
@@ -1252,6 +1293,15 @@ footer p {
         bottom: 15%;
         padding: 10px;
         border-radius: 5%;
+    }
+    #logo-rap {
+        font-size: 60px;
+    }
+    #genre-rap {
+        font-size: 50px;
+    }
+    #shop-rap {
+        font-size: 20px;
     }
 }
 
