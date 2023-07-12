@@ -57,7 +57,6 @@ nav{
     margin-top: 22px;
 }
 
-
 #logo-punk {
     font-family: 'Bebas Neue', sans-serif;
     color: #FA7500;
@@ -68,7 +67,7 @@ nav{
 }
 #logo-rap {
     font-family: 'Comfortaa', cursive;
-    color: white;
+    color: #FF52A2;
 }
 #genre-punk {
     font-family: 'Bebas Neue', sans-serif;
@@ -76,11 +75,42 @@ nav{
 }
 #genre-pop {
     font-family: 'Crimson Text', serif;
-    color: #A7EDE7;
+    color: crimson;
 }
 #genre-rap {
     font-family: 'Comfortaa', cursive;
-    color: #B70404;
+    color: black;
+}
+#shop-punk {
+ 
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #FA7500; 
+    color: black;
+}
+#shop-punk:hover {
+    color: #FA7500;
+    background-color: black;
+    cursor: pointer;
+}
+#shop-pop {
+    font-family: 'Crimson Text', serif;
+    background-color: crimson;
+    color: #ddd;
+}
+#shop-pop:hover {
+    color: crimson;
+    background-color: #ddd;
+    cursor: pointer;
+}
+#shop-rap {
+    font-family: 'Comfortaa', cursive;
+    background-color: #FF52A2;
+    color: #ddd;
+}
+#shop-rap:hover {
+    color: #FF52A2;
+    background-color: #ddd;
+    cursor: pointer;
 }
 /* Aca empieza a estilar IGNACIO */
 
@@ -943,6 +973,158 @@ footer p {
           .formulario-nosotros .datos-contacto {
             gap: 1.6rem;
           }
+        /* Hero */
+    .hero{
+        width: 100%;
+        height: fit-content;
+
+    }
+    .hero img {
+        max-width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+    
+    }
+    .carousel-content .text-1 {
+        position: absolute;
+        z-index: 20;
+        font-size: 55px; 
+        left: 15%;
+        bottom: 40%;
+    }
+    .carousel-content .text-2 {
+        position: absolute;
+        z-index: 20;
+        font-size: 45px; 
+        left: 15%;
+        bottom: 30.5%;
+    }
+    .carousel-content .text-3 {
+        position: absolute;
+        font-size: 19px;
+        z-index: 20;
+        border-style: solid;
+        left: 15%;
+        bottom: 12%;
+        padding: 8px;
+        border-radius: 5%;
+    }
+}
+  @media(min-width: 801px){
+    header{
+        overflow: hidden;
+    }
+    
+    /* Jade */
+        .hamburger-menu, .checkbox, .sidebar, .sidenav {
+            display: none;
+        }
+    .contacts {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 4%;
+        }
+        
+    .contacts p {
+            margin: 25px;
+            font-family: 'Ysabeau SC', sans-serif;
+            font-size: 25px;
+            font-weight: 300;
+        }
+    .contacts i {
+            font-size: 30px;
+            margin-left: 24px;
+        }
+    .contacts a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+    .contacts a:hover {
+            color: #bb7433;
+        }
+    .dropdown {
+            float: left;
+           overflow: hidden;
+           font-family: 'Ysabeau SC', sans-serif;
+          }
+    .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 0px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0; 
+        }
+    .dropdown .dropbtn:hover {
+            color: #bb7433;
+        }
+    .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 186px;
+            margin-top: 3px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }      
+    .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+    .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+    .dropdown:hover .dropdown-content {
+            display: block;
+            position: fixed;
+          }
+
+    .formulario-nosotros .datos-contacto {
+            gap: 1.6rem;
+     }
+    /* Hero */
+    .hero{
+        width: 100%;
+        height: fit-content;
+
+    }
+    .hero img {
+        max-width: 100%;
+        max-height: 600px;
+        object-fit: cover;
+    
+    }
+    .carousel-content .text-1 {
+        position: absolute;
+        z-index: 20;
+        font-size: 55px; 
+        left: 15%;
+        bottom: 40%;
+    }
+    .carousel-content .text-2 {
+        position: absolute;
+        z-index: 20;
+        font-size: 45px; 
+        left: 15%;
+        bottom: 30.5%;
+    }
+    .carousel-content .text-3 {
+        position: absolute;
+        font-size: 19px;
+        z-index: 20;
+        border-style: solid;
+        left: 15%;
+        bottom: 12%;
+        padding: 8px;
+        border-radius: 5%;
+    }
 }
 
   @media(min-width:1200px){
@@ -1059,6 +1241,16 @@ footer p {
         font-size: 60px; 
         left: 15%;
         bottom: 30.5%;
+    }
+    .carousel-content .text-3 {
+        position: absolute;
+        font-size: 22px;
+        z-index: 20;
+        border-style: solid;
+        left: 15%;
+        bottom: 15%;
+        padding: 10px;
+        border-radius: 5%;
     }
 }
 
