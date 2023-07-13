@@ -829,8 +829,8 @@ footer p {
         flex-direction: column;
         gap: var(--hamburger-gap);
         width: max-content;
-        position: relative;
-        left: 45%;
+        position: fixed;
+        left: 85%;
         top:18px;
         z-index: 2;
         cursor: pointer;
@@ -856,14 +856,15 @@ footer p {
      transition: translate var(--animation-timing);
         translate: 100%;
         z-index: 2;
-        position: relative;
+        position: fixed;
         font-family: 'Ysabeau SC', sans-serif;
         margin-top: 70px;
         margin-right: 0%;
-        background-color:#51351c ;
+        background: rgb(238,209,105);
+        background: linear-gradient(0deg, rgba(238,209,105,1) 9%, rgba(255,175,70,1) 88%);
         border-radius: 2%;
-        padding: 10% 22% 60% 10%;
-        right: 0%;
+        padding: 10% 22% 35% 10%;
+        right: -10%;
     
      }
      .sidenav {
@@ -876,8 +877,14 @@ footer p {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 12%;
-        
+        margin-left: 30%;
+     }
+     .last-btn {
+        position: fixed;
+        bottom: 30px;
+        left: 26px;
+    
+
      }
      .sidenav div i {
         font-size: 15px;
