@@ -868,11 +868,13 @@ footer p {
      .hamburger-menu:has(input:checked)::before {
         rotate: 45deg;
         width: var(--x-width);
+        background-color: #fee966;
         
      }
      .hamburger-menu:has(input:checked)::after {
         rotate: -45deg;
         width: var(--x-width);
+        background-color: #fee966;
         
      }
      .sidebar {
