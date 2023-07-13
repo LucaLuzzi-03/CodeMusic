@@ -121,26 +121,8 @@ nav{
     margin: 20px;
 }
 
-@media(max-width:500px){
-    .artistas{
-        flex-wrap: wrap;
-        padding: 20px;
-        gap: 20px;
-    }
 
-    .disco img{
-        height: 100px;
-        width: 100px;
-    }
-}
 
-@media(min-width:500px){
-    .disco img{
-        height: 180px;
-        width: 180px;
-        
-    }
-}
 
 
 .disco{
@@ -352,6 +334,11 @@ parte galeria */
     width: 100%;
     }
 
+    .disco img{
+        height: 200px;
+        width: 200px;
+    }
+
     .carrd-body{
         text-align: start;
 
@@ -381,10 +368,12 @@ parte galeria */
         font-size:  50px; 
         padding: 210px ;
     }
+
     
 }
 
-@media (min-width:701px) {
+
+@media (max-width:1023px) {
 
     .container-2{
         flex-wrap: wrap;
@@ -398,8 +387,10 @@ parte galeria */
         width: 100%;
     }
 
-    
-
+    .disco img{
+        height: 100px;
+        width: 100px;
+    }
     .carrd-title{
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
@@ -425,6 +416,17 @@ parte galeria */
 @media (max-width:700px){
     .container-2{
         flex-wrap: wrap;
+    }
+
+    .artistas{
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .disco img{
+        height: 100px;
+        width: 100px;
     }
 
     .slider-container2 a h1{
