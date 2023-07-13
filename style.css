@@ -899,7 +899,52 @@ footer p {
      .hamburger-menu:has(input:checked) + .sidebar {
         translate: 0;
      }
+      /* Hero */
+    .hero{
+        width: 100%;
+        height: fit-content;
+
     }
+    .hero img {
+        max-width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+    
+    }
+    .carousel-content .text-1 {
+        position: absolute;
+        z-index: 20;
+        font-size: 40px; 
+        left: 15%;
+        bottom: 35%;
+    }
+    .carousel-content .text-2 {
+        position: absolute;
+        z-index: 20;
+        font-size: 30px; 
+        left: 15%;
+        bottom: 26%;
+    }
+    .carousel-content .text-3 {
+        position: absolute;
+        font-size: 12px;
+        z-index: 20;
+        border-style: solid;
+        left: 15%;
+        bottom: 8%;
+        padding: 8px;
+        border-radius: 5%;
+    }
+    #logo-rap {
+        font-size: 35px;
+    }
+    #genre-rap {
+        font-size: 30px;
+    }
+    #shop-rap {
+        font-size: 10px;
+    }
+}
 
   @media(min-width:501px){
     header{
@@ -931,7 +976,7 @@ footer p {
             font-weight: 300;
         }
         .contacts i {
-            font-size: 15px;
+            font-size: 16px;
             margin-left: 24px;
         }
         .contacts a {
@@ -995,7 +1040,7 @@ footer p {
     }
     .hero img {
         max-width: 100%;
-        max-height: 600px;
+        min-height: 300px;
         object-fit: cover;
     
     }
@@ -1004,14 +1049,14 @@ footer p {
         z-index: 20;
         font-size: 40px; 
         left: 15%;
-        bottom: 32%;
+        bottom: 35%;
     }
     .carousel-content .text-2 {
         position: absolute;
         z-index: 20;
         font-size: 35px; 
         left: 15%;
-        bottom: 22%;
+        bottom: 26%;
     }
     .carousel-content .text-3 {
         position: absolute;
@@ -1019,7 +1064,7 @@ footer p {
         z-index: 20;
         border-style: solid;
         left: 15%;
-        bottom: 4%;
+        bottom: 10%;
         padding: 8px;
         border-radius: 5%;
     }
