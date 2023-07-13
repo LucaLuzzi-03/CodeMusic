@@ -442,6 +442,11 @@ parte galeria */
         width: 100%;
     }
 
+    .card-info{
+        height: 30px;
+        overflow: hidden;
+    }
+
     .carrd-title{
         border-top: 1px solid rgb(10, 10, 10);
         display: flex;
