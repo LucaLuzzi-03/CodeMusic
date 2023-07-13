@@ -1,10 +1,11 @@
 :root {
-    --bar-width: 35px ;
+    --bar-width: 45px ;
     --bar-height: 8px;
     --hamburger-gap: 5px;
     --foreground: #333;
     --background: white;
-    --animation-timing: 200ms 
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height)) *3 + (var(--hamburger-gap) *2);
 }
 
 * {
@@ -830,6 +831,7 @@ footer p {
         margin: 0;
      }
      .hamburger-menu {
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
         display: flex;
         flex-direction: column;
         gap: var(--hamburger-gap);
@@ -847,7 +849,9 @@ footer p {
         width: var(--bar-width);
         height: var(--bar-height);
         background-color: var(--foreground);
-        border-radius: 99px;
+        transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing);
+        transform-origin: left center;
+        border-radius: 45px;
         
      }
      .hamburger-menu input {
@@ -856,6 +860,20 @@ footer p {
         margin: 0;
         outline: none;
         pointer-events: none;
+     }
+     .hamburger-menu input:checked {
+        opacity: 0;
+        width: 0;
+     }
+     .hamburger-menu:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        
+     }
+     .hamburger-menu:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        
      }
      .sidebar {
      transition: translate var(--animation-timing);
