@@ -370,6 +370,9 @@ parte galeria */
         padding: 210px ;
     }
 
+    .carrd-body h4{
+        font-size:15px;
+    }
     
 }
 
@@ -409,6 +412,10 @@ parte galeria */
 
     .carrd-info{
         padding-right: 5px;
+    }
+
+    .carrd-body h4{
+        font-size:15px;
     }
 }
 
@@ -458,6 +465,7 @@ parte galeria */
 
     .carrd-title h4{
         width: 90%;
+        font-size: 12px;
     }
 
     .card-info h6{
@@ -492,9 +500,7 @@ parte galeria */
 
 
 
-.carrd-body h4{
-    font-size:15px;
-}
+
 
 .carrd-body a i{
     font-size: 20px;
@@ -885,13 +891,19 @@ footer p {
         font-family: 'Ysabeau SC', sans-serif;
         margin-top: 70px;
         margin-right: 0%;
-        background: rgb(238,209,105);
-        background: linear-gradient(0deg, rgba(238,209,105,1) 9%, rgba(255,175,70,1) 88%);
+        background: #fc4a1a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         border-radius: 2%;
-        padding: 10% 22% 35% 10%;
+        padding: 10% 15% 35% 10%;
         right: -10%;
     
      }
+
+
+
+  
+
      .sidenav {
      display: flex;
      flex-direction: column;
@@ -903,6 +915,7 @@ footer p {
         flex-direction: row;
         align-items: center;
         margin-left: 30%;
+        
      }
      .last-btn {
         position: fixed;
@@ -914,11 +927,13 @@ footer p {
      .sidenav div i {
         font-size: 15px;
         margin-left: 15px;
+        color: #fee966;
         
      }
      .sidenav div a {
         text-decoration: none;
         color: aliceblue;
+        width: 106px;
      }
      .sidebar div a:hover {
         color: #bb7433;
